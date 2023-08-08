@@ -60,10 +60,40 @@ public class Demo1{
         }
     int total = marks1 + marks2 + marks3;
     int avg = total/3;
-    String status;
+    String status = "";
     if (avg > 75) {
         status = "Credit Pass";
+    }else if (avg>55){
+        status = "Pass";
+    }else {
+       status= "Fail";
+    }
 
+    String status1 = "";
+    if (marks1 > 75) {
+        status1 = "Credit Pass";
+    }else if (marks1>55){
+        status1 = "Pass";
+    }else {
+       status1= "Fail";
+    }
+
+     String status2 = "";
+    if (marks2 > 75) {
+        status1 = "Credit Pass";
+    }else if (marks2>55){
+        status2 = "Pass";
+    }else {
+       status2= "Fail";
+    }
+
+     String status3 = "";
+    if (marks3 > 75) {
+        status1 = "Credit Pass";
+    }else if (marks3>55){
+        status3 = "Pass";
+    }else {
+       status3= "Fail";
     }
 
     System.out.println("+-------------------------------------+");
@@ -77,7 +107,12 @@ public class Demo1{
     System.out.println("+------------+------------+------------+");
     System.out.println("|  SUBJECT   |   MARKS    |   STATUS   |");
     System.out.println("+------------+------------+------------+");
-    System.out.println("|  SUBJECT   |   MARKS    |   STATUS   |");
+    System.out.printf("|  %6s   |   %s    |   %s   |\n", subject1, marks1, status1);
+    System.out.println("+------------+------------+------------+");
+    System.out.printf("|  %s   |   %s    |   %s   |\n", subject2, marks2, status2);
+    System.out.println("+------------+------------+------------+");
+    System.out.printf("|  %s   |   %s    |   %s   |\n", subject1, marks1, status2);
+    System.out.println("+------------+------------+------------+");
 
     }
 
